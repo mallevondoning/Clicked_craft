@@ -40,9 +40,21 @@ public class ClickBlock : MonoBehaviour
     {
         switch (_blockType)
         {
-            case BlockType.WoodBlock:
+            case BlockType.AxeBlock:
+
+                for (int i = 0; i < GameManager.ItemIDList.Count; i++)
+                {
+                    if (GameManager.ItemIDList[i].ItemID == ItemID.Wood)
+                    {
+                        GameManager.ItemIDList[i].Amount++;
+                        break;
+                    }
+                }
+
                 break;
-            case BlockType.StoneBlock:
+            case BlockType.PickaxeBlock:
+                break;
+            case BlockType.ShovelBlock:
                 break;
             default:
                 Debug.Log("Click block ID not set on "+gameObject.name);

@@ -5,11 +5,12 @@ using UnityEngine;
 public enum BlockType
 {
     NoneID = 0,
-    WoodBlock = 1,
-    StoneBlock = 2,
+    AxeBlock = 1,
+    PickaxeBlock = 2,
+    ShovelBlock = 3,
 }
 
-public enum ID
+public enum ItemID
 {
     NoneID = 0,
     Wood = 1,

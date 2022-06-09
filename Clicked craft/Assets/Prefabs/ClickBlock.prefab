@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 471673494680611836}
   - component: {fileID: 471673494680611827}
   - component: {fileID: 471673494680611826}
-  - component: {fileID: 471673494680611825}
   - component: {fileID: 471673494680611838}
+  - component: {fileID: 6486664882766029678}
   m_Layer: 0
   m_Name: ClickBlock
   m_TagString: Untagged
@@ -301,20 +301,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471673494680611824}
   m_Mesh: {fileID: 0}
---- !u!64 &471673494680611825
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471673494680611824}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &471673494680611838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +314,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _blockType: 0
+--- !u!65 &6486664882766029678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471673494680611824}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.5, y: 0.5, z: -0.5}
 --- !u!1 &3063594763459623970
 GameObject:
   m_ObjectHideFlags: 0
